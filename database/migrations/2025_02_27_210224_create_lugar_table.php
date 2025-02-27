@@ -11,11 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('notificacion', function (Blueprint $table) {
-            $table->id('notificacion_id');
-            $table->foreign('usuario_id');
-            $table->foreign('reserva_id');
-            $table->string('contenido'); 
+        Schema::create('lugar', function (Blueprint $table) {
+            
+            $table->id('espacio_id');
+            $table->string('tipo');
+            $table->string('usuario'); 
+            $table->boolean('disponible'); 
+            $table->integer('cantidad_personas');  
             $table->timestamps();
         });
     }
@@ -25,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('notificacion');
+        Schema::dropIfExists('lugar');
     }
 };

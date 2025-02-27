@@ -20,7 +20,7 @@ class doscontroller extends Controller
      */
     public function create()
     {
-        return view('dos.home');
+        return view('dos.dos');
 
     }
 

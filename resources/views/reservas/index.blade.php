@@ -11,12 +11,23 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+        input[type="email"] {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+            text-align: center        }
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+            text-align: center
+        }
+        input[type="email"],
         .container {
             width: 80%;
             margin: 30px auto;
             padding: 20px;
             background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
             text-align: center;
@@ -35,6 +46,15 @@
         }
         th {
             background-color: #f2f2f2;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2e76c7;
+            color: white;
+            border: none;
+            text-align: center
+            cursor: pointer;
         }
        
     </style>
@@ -72,6 +92,11 @@
             
         </table>
     </div>
+    <label for="ingrese su correo electronico">ingrese su correo electronico para cancelar</label>
+    <input type="email" id="correo" name="correo" required>
+    <br><br>
+    <button><a href="{{route('dos.create')}}">confirmar cancelacion</a></button> 
+    
 
 </body>
 </html>
