@@ -95,7 +95,7 @@
     <label for="ingrese su correo electronico">ingrese su correo electronico para cancelar</label>
     <input type="email" id="correo" name="correo" required>
     <br><br>
-    <button><a href="{{route('dos.create')}}">confirmar cancelacion</a></button> 
+    <button><a href="{{route('usuario.create')}}">confirmar cancelacion</a></button> 
     
 
 </body>

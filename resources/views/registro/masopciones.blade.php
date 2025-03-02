@@ -50,22 +50,28 @@
                 <tr>
                     <th>Evento</th>
                     <th>Fecha</th>
-                    <th>usuario</th>
-                    <th>identificacion</th>
+                    <th>Usuario</th>
+                    <th>Identificacion</th>
+                    <th>Hora_inicio</th>
+                    <th>Hora_fin</th>
                 </tr>
             
                 <tr>
                     <td>Reserva de Cubículo</td>
                     <td>2025-02-20 10:00</td>
-                    <td>aprendiz</td>
+                    <td>Aprendiz</td>
                     <td>1028374758</td>
+                    <td>1:00 pm</td>
+                    <td>4:50 pm</td>
 
                 </tr>
                 <tr>
                     <td>Reserva de Sala de Estudio</td>
                     <td>2025-02-22 14:30</td>
-                    <td>maestro</td>
+                    <td>Maestro</td>
                     <td>8282282828</td>
+                    <td>10:00 am</td>
+                    <td>1:50 pm</td>
 
                 </tr>
             

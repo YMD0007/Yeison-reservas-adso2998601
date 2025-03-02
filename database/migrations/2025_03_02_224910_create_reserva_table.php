@@ -11,10 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('historial', function (Blueprint $table) {
-            $table->id('historial_id');
+        Schema::create('reserva', function (Blueprint $table) {
+            $table->id('reserva_id');
             $table->integer('usuario_id');
-            $table->date('fecha_asignacion');
+            $table->integer('lugar_id'); 
+            $table->date('historial'); 
+            $table->date('hora_inicio'); 
+            $table->date('hora_fin'); 
             $table->timestamps();
         });
     }
@@ -24,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('historial');
+        Schema::dropIfExists('reserva');
     }
 };

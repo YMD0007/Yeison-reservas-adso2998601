@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Primercontroller extends Controller
+class homecontroller extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('primer.index');
+        return view('registro.registro');
     }
 
     /**
@@ -19,8 +19,7 @@ class Primercontroller extends Controller
      */
     public function create()
     {
-      return view('primer.historial');
-
+        return view('registro.masopciones');
     }
 
     /**

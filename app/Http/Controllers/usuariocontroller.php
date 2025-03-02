@@ -4,15 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class doscontroller extends Controller
+class usuariocontroller extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('dos.index');
-
+        return view('menu.Menu');
     }
 
     /**
@@ -20,8 +19,7 @@ class doscontroller extends Controller
      */
     public function create()
     {
-        return view('dos.dos');
-
+        return view('menu.Notificacion');
     }
 
     /**
@@ -37,7 +35,7 @@ class doscontroller extends Controller
      */
     public function show(string $id)
     {
-        
+        //
     }
 
     /**

@@ -73,7 +73,7 @@
         
       
         
-        <button><a href="{{route('dos.index')}}">ingresar</a></button>
+        <button><a href="{{route('usuario.index')}}">ingresar</a></button>
 
     </form>
 
